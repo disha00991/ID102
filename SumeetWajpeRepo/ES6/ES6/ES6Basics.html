@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+    
+    // var month  ="Dec";
+
+
+function ChangeMonth(){   
+    if(true){
+        let month = "Jan";
+        console.log(month);
+        
+        if(true){
+        let month = "Dec";            
+            console.log(month);            
+        }
+    }    
+}
+
+
+ChangeMonth();// Call 
+//console.log(month);
+
+// {
+//     let month = "Feb";
+// }
+
+//let x = 10;// can't access using window.x
+
+
+
+const PI = 3.14;
+// PI = 3.1476; // Error !
+
+// Enhanced Object Literal Syntax 
+// If Prop name same as Local Variable !
+var Name = 'Sachin';
+var City = 'Mumbai';
+var person = {
+   Name,City, 
+    Age:43,
+    Address:{
+        FlatNo:'S102',
+        FlatName:'Matoshree',
+        City:'Mumbai'
+    },
+    getDetails:function(){
+        console.log(this.Name + " resides in " + this.City)
+    }
+}
+// Iterating Construct
+
+var cars = ['BMW','AUDI','FERRARI','Hyundai'];
+
+        // for(let i=0;i<cars.length;i++){
+        //     console.log(cars[i]);
+        // }
+
+        // for(let c in cars){
+        //     console.log(cars[c]);
+        // }
+        // ES 6
+        // for(let c of cars){
+        //     console.log(c);
+        // }
+
+        // cars.forEach(function(){
+
+        // });
+
+// Destructuring with Arrays !
+let x,y,z;
+[x,,,y,z="Tata"] = ['BMW','AUDI','FERRARI','Hyundai'];
+console.log(x);
+
+
+// Destructuring with Objects !
+var Name,City,isMNC;
+var company = {Name:'Sapient',City:'Gurgaon'};
+// Name = company.Name;
+// City = company.City;
+
+({Name,City,isMNC} = company);
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

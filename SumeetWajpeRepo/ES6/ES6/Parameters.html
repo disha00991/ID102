@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+    // Rest Parameters & Spread Parameters
+
+    // Spread
+    var cars = ['BMW','AUDI','FERRARI','Hyundai'];
+    var moreCars = ['Mahindra','TATA'];
+    var allCars = [...cars,...moreCars,"Maruti"];// spread
+
+        // rest
+
+        // function PrintBooks(author,...restOfArgs){
+        //     console.log(restOfArgs);
+        // }
+
+        // PrintBooks("Sachin","Playing It My Way");
+        // PrintBooks("Dr. APJ Abdul Kalam","India 2020","Wings Of Fire");
+        
+
+        // function PrintBooks(noOfPages,author,title,typeOfPrint){
+
+        // }
+
+        // PrintBooks(...[1000,"Sachin","Playing It My Way","Colour"]); // Spread !
+
+
+            // Default Parameters
+            // in es 5
+            // function PrintBooks(noOfPages,author,title){
+            //         noOfPages = noOfPages || 0;
+            //         author = author || "Unknown";
+            //         title = "Unknown";
+            //         console.log(noOfPages,author,title);
+            // }
+
+                // ES 6
+                var authorName = "Unknown";
+            function PrintBooks(noOfPages=0,author=authorName,title="Unknown"){
+                console.log(noOfPages,author,title);
+
+            }
+
+            PrintBooks(2000,undefined,"XYZ");
+
+            // function Car(name,speed){
+            //     this.Name = name || "i20";
+            //     this.Speed = speed || 200;
+            // }
+    
+            // var c = new Car();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

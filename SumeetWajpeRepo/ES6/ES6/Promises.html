@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+<script src="AsyncTask.js"></script>
+    <script>
+    
+
+   var aReturnedPromise = MakeAPromise();
+
+   aReturnedPromise.then(function(result){
+            console.log(result);
+    });
+
+    aReturnedPromise.catch(function(error){
+        console.log(error);        
+    })
+    console.log('Wait for result !');
+
+
+
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
