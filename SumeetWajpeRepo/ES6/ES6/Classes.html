@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+
+    <script>
+    // ES 5  constructor !
+        //   function Car(name,speed){
+        //         this.Name = name || "i20";
+        //         this.Speed = speed || 200;
+        //     }
+
+
+            // ES 6
+
+            class Car{
+                constructor(id=0,name="",speed=0){
+                    this.Id = id;
+                    this.Name = name;
+                    this.Speed = speed;
+                }
+                Accelerate(){
+                    return this.Name + " is running @ " + this.Speed + " kmph !";
+                }
+                // static Accelerate(){
+                // }
+            }
+
+           // var cObj = new Car();
+
+           class JamesBondCar extends Car{
+                constructor(id,name,speed,fly,nitro){
+                    super(id,name,speed);
+                        this.canFly  = fly;
+                        this.useNitro = nitro;
+                }
+
+                Accelerate(){
+                 return super.Accelerate() + " Can it Fly ? " + this.canFly;
+                }
+           }
+
+           var jbc = new JamesBondCar("007","Houston",300,true,true);
+
+
+           //jbc.
+
+           class Account{
+               constructor(no=1000,name=""){
+                   this.No = no;
+                   this.Name = name;
+               }
+
+               get AccountNo(){
+                   return this.No;
+               }
+
+               set AccountNo(theNo){
+                   this.No = theNo;
+               }
+           }
+
+           var acc = new Account();
+           acc.AccountNo = 2000; // calls Set Implicitly
+           console.log(acc.AccountNo); // calls Get Implicitly
+
+
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
