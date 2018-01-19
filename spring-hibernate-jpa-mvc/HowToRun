@@ -1,0 +1,6 @@
+Maven Clean Compile Install
+Refresh Target
+Copy "spring-hibernate-jpa-mvc-1.0.war"
+restart server
+paste in tomcat folder
+run URL in browser
