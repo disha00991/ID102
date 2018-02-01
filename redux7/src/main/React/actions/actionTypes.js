@@ -1,0 +1,5 @@
+export const USERS_SAVED = 'USERS_SAVED'
+export const USERS_ALL = 'USERS_ALL'
+export const AJAX_BEGIN = 'AJAX_BEGIN'
+export const AJAX_END = 'AJAX_END'
+export const USER_EDIT = 'USER_EDIT'	
