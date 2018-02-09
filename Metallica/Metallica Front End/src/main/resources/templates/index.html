@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Spring Boot React Redux</title>
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+
+    <!-- Bootstrap core CSS     -->
+    <link href="/ui/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!--  Light Bootstrap Table core CSS    -->
+    <link href="/ui/css/light-bootstrap-dashboard.css" rel="stylesheet"/>
+
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css' />
+    <link href="/ui/css/pe-icon-7-stroke.css" rel="stylesheet" />
+    <link href="/ui/css/react-notifications.css" rel="stylesheet" />
+    <link href="/ui/css/ticker.css" rel="stylesheet" />
+    <link href="/ui/css/all-ui.css" rel="stylesheet" />
+    
+    
+  <style>
+	  .div-background{
+	  	background-color:lightblue;
+	  }
+	  .div-lightbackground{
+	  	background-color: aliceblue;
+	  }
+	  .ticker-panel{
+	  	height:103px;
+	  	overflow:hidden;
+	  }
+	  .scroll-left {
+	         height: 50px;	
+	         overflow: visible;
+	         position: relative;
+	         width : 100%
+	        }
+	       .scroll-left .tickerClass {
+	         font-weight:bold;
+	         position: absolute;
+	         display:inline-block;
+	         width: 100%;
+	         height: 100%;
+	         margin: 0;
+	         line-height: 50px;
+	         text-align: center;
+	         /* Starting position */
+	         -moz-transform:translateX(100%);
+	         -webkit-transform:translateX(100%);	
+	         transform:translateX(100%);
+	         /* Apply animation to this element */	
+	         -moz-animation: scroll-left 10s linear infinite;
+	         -webkit-animation: scroll-left 15s linear infinite;
+	         animation: scroll-left 20s linear infinite;
+	        }
+	        /* Move it (define the animation) */
+	        @-moz-keyframes scroll-left {
+	         0%   { -moz-transform: translateX(100%); }
+	         100% { -moz-transform: translateX(-100%); }
+	        }
+	        @-webkit-keyframes scroll-left {
+	         0%   { -webkit-transform: translateX(100%); }
+	         100% { -webkit-transform: translateX(-100%); }
+	        }
+	        @keyframes scroll-left {
+	         0%   { 
+	         -moz-transform: translateX(100%); /* Browser bug fix */
+	         -webkit-transform: translateX(100%); /* Browser bug fix */
+	         transform: translateX(100%); 		
+	         }
+	         100% { 
+	         -moz-transform: translateX(-100%); /* Browser bug fix */
+	         -webkit-transform: translateX(-100%); /* Browser bug fix */
+	         transform: translateX(-100%); 
+	         }
+	        }
+	  .table-style{
+		  float:right;
+		  border:none;
+	  }
+	  
+	  .table-style-heading{
+		  float:left;  
+	  }
+	  
+	  .plus-style{
+		  display:block;
+	      height: 80px;
+	      width: 80px;
+	      border-radius: 50%;
+	      border: 1px solid grey;
+	      padding-right: 60px;
+	      margin-left: 55%;
+	      position: relative;  
+	  }
+	
+	  .glyph{
+		  font-size: 35px;
+		  margin-right: 70px;	 
+	  }
+	
+	  #new-trade-form{
+		  display: block;
+	  } 
+	  
+	  .tb{
+		  border: 1px solid grey;
+	  }
+	  
+	  .th{
+	      font-size: 50px;
+	  }
+	  
+	  .tradeComponent{
+	  	  width: 100%;
+	  	  height:629px;
+	  }
+	  
+	  .buttonPagination{
+	  	  border:none;
+	  }
+	  .searchButton{
+	    top: 0px;
+	    z-index: auto;
+	    width: auto;
+	    right: 10px;
+	  }
+	  .clearButton{
+	    z-index: auto;
+	    width: auto;
+	    top: -5px;
+	    right: 10px;
+	  }
+	  .customMargin{
+	  	margin-left:10px;
+	  	margin-right:10px;
+	  }
+	  .single-ticker{
+	  	width:70px;
+	  	margin-right: 3px;
+	  }
+  </style>
+
+</head>
+<body>
+<div class="img-container" id="content"></div>
+<script src="/bundle.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script src="/ui/js/react-notifications.js"></script>
+</body>
+</html>
