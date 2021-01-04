@@ -31,7 +31,7 @@
     "react-addons-test-utils": "^15.4.2"
   },
   "dependencies": {
-    "axios": "^0.15.3",
+    "axios": "^0.21.1",
     "immutable": "^3.8.1",
     "react": "^15.0.1",
     "react-addons-pure-render-mixin": "^15.4.2",
